@@ -1,10 +1,10 @@
 // Problem-05: Text Analyzer for an AI Company
 
-function textAnalyzer(text) {
-    if(typeof text !== "string") {
+function analyzeText(str) {
+    if(typeof str !== "string") {
         return "Invalid"
     }
-    const words = text.split(" ")
+    const words = str.split(" ")
     let longest="";
 
     for (let word of words) {
@@ -12,8 +12,6 @@ function textAnalyzer(text) {
             longest = word;
         }
     }
-    const token = text.split(" ").join("").length;
+    const token = str.split(" ").join("").length;
     return { longest, token };
 }
-
-console.log(textAnalyzer("I love programming"));
