@@ -26,3 +26,4 @@ function gonoVote(array){
         return false;
     }
 }
+
